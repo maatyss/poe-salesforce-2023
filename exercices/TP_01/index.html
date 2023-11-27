@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TP 01</title>
+</head>
+<body>
+
+<header class="pt-10 max-w-[1200px] mx-auto">
+    <nav class="flex flex-row justify-between uppercase font-medium">
+        <a href="#affairs">Occasion / Neuf</a>
+        <a href="#pop">populaires</a>
+        <a href="#contact">contact</a>
+        <a href="#sells">ventes</a>
+    </nav>
+</header>
+
+<main class="py-20 flex flex-col items-center max-w-[1200px] mx-auto">
+    <h1 class="text-5xl font-bold">AcheteMaVoiture.com</h1>
+
+    <section class="py-10 flex flex-col gap-y-12 items-center w-2/3">
+        <h2 class="text-3xl font-semibold">Vente</h2>
+        <div class="flex flex-row justify-between w-full">
+            <article>
+                <h3 class="text-xl font-medium text-center">Occasion</h3>
+                <ul class="flex flex-col gap-3">
+                    <li>Citroen ID20</li>
+                    <li>AC Cobra</li>
+                    <li>Alpine A110</li>
+                    <li>Corvette C2</li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="text-xl font-medium text-center">Neuf</h3>
+                <ul class="flex flex-col gap-3">
+                    <li>Opel ADAM S</li>
+                    <li>Volkswagen Transporter</li>
+                    <li>Opel Combo Cargo</li>
+                    <li>Land Rover Defender</li>
+                </ul>
+            </article>
+        </div>
+
+    </section>
+
+    <section class="py-10 flex flex-col gap-y-12 items-center w-2/3">
+        <h2 class="text-3xl font-semibold">Quelques voitures</h2>
+        <ul class="grid grid-cols-2 place-items-center gap-x-10 gap-y-10 w-full">
+            <li>
+                <article class="border-2 border-gray py-3 px-2">
+                    <img alt="" src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/02/21/00/01/citroen-id-citroen-id-id20-ou-dsuper5-1970_8728512340.jpg">
+                    <p>marque</p>
+                    <p>modèle</p>
+                    <p><span>chevaux</span><span>chevaux fiscaux</span></p>
+                    <p>carburant</p>
+                    <p>18 500 €</p>
+                </article>
+            </li>
+            <li>
+                <article class="border-2 border-gray py-3 px-2">
+                    <img alt="" src="">
+                    <p>marque</p>
+                    <p>modèle</p>
+                    <p><span>chevaux</span><span>chevaux fiscaux</span></p>
+                    <p>carburant</p>
+                    <p>prix</p>
+                </article>
+            </li>
+            <li>
+                <article class="border-2 border-gray py-3 px-2">
+                    <img alt="" src="">
+                    <p>marque</p>
+                    <p>modèle</p>
+                    <p><span>chevaux</span><span>chevaux fiscaux</span></p>
+                    <p>carburant</p>
+                    <p>prix</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <form>
+            <h3>Demande de devis</h3>
+            <label for="lastname">nom</label>
+            <input id="lastname" type="text">
+            <label for="firstname">prénom</label>
+            <input id="firstname" type="text">
+            <label for="contact">contact</label>
+            <input id="contact" type="text">
+            <label for="message">message</label>
+            <textarea cols="30" id="message" name="message" rows="10"></textarea>
+        </form>
+    </section>
+
+    <section class="py-10 flex flex-col gap-y-12 items-center w-2/3">
+        <h2>Ventes déjà établies</h2>
+        <table class="border w-full">
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>janvier</th>
+                    <th>fevrier</th>
+                    <th>mars</th>
+                    <th>avril</th>
+                    <th>mai</th>
+                    <th>juin</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>occasion</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>neuf</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer>
+    <nav>
+        <ul>
+            <li>C.G.U</li>
+            <li>Mentions Légales</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</footer>
+
+</body>
+</html>
