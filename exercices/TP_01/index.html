@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<header class="pt-10 max-w-[1200px] mx-auto">
+<header class="p-10 pb-0 max-w-[1200px] mx-auto">
     <nav class="flex flex-row justify-between uppercase font-medium">
         <a href="#affairs">Occasion / Neuf</a>
         <a href="#pop">populaires</a>
@@ -20,12 +20,12 @@
 <main class="py-20 flex flex-col items-center max-w-[1200px] mx-auto">
     <h1 class="text-5xl font-bold">AcheteMaVoiture.com</h1>
 
-    <section class="py-10 flex flex-col gap-y-12 items-center w-2/3">
+    <section id="affairs" class="py-10 flex flex-col gap-y-12 items-center w-2/3">
         <h2 class="text-3xl font-semibold">Vente</h2>
         <div class="flex flex-row justify-between w-full">
             <article>
                 <h3 class="text-xl font-medium text-center">Occasion</h3>
-                <ul class="flex flex-col gap-3">
+                <ul class="flex flex-col items-center gap-3 mt-5 list-image-[url(./img/car-solid.svg)]">
                     <li>Citroen ID20</li>
                     <li>AC Cobra</li>
                     <li>Alpine A110</li>
@@ -34,7 +34,7 @@
             </article>
             <article>
                 <h3 class="text-xl font-medium text-center">Neuf</h3>
-                <ul class="flex flex-col gap-3">
+                <ul class="flex flex-col items-center gap-3 mt-5 list-image-[url(./img/car-side-solid.svg)]">
                     <li>Opel ADAM S</li>
                     <li>Volkswagen Transporter</li>
                     <li>Opel Combo Cargo</li>
@@ -45,89 +45,94 @@
 
     </section>
 
-    <section class="py-10 flex flex-col gap-y-12 items-center w-2/3">
+    <section id="pop" class="py-10 flex flex-col gap-y-12 items-center w-2/3">
         <h2 class="text-3xl font-semibold">Quelques voitures</h2>
         <ul class="grid grid-cols-2 place-items-center gap-x-10 gap-y-10 w-full">
             <li>
-                <article class="border-2 border-gray py-3 px-2">
-                    <img alt="" src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/02/21/00/01/citroen-id-citroen-id-id20-ou-dsuper5-1970_8728512340.jpg">
-                    <p>marque</p>
-                    <p>modèle</p>
-                    <p><span>chevaux</span><span>chevaux fiscaux</span></p>
-                    <p>carburant</p>
+                <article class="flex flex-col items-center border-2 border-gray py-3 px-2 rounded-lg bg-gray-50">
+                    <img class="rounded-lg" alt="Citroen ID20" src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/02/21/00/01/citroen-id-citroen-id-id20-ou-dsuper5-1970_8728512340.jpg">
+                    <p><span>Citroen</span> <span>ID20</span></p>
+                    <p><span>? Ch</span> / <span>? Cv</span></p>
+                    <p>Essence</p>
                     <p>18 500 €</p>
                 </article>
             </li>
             <li>
-                <article class="border-2 border-gray py-3 px-2">
-                    <img alt="" src="">
-                    <p>marque</p>
-                    <p>modèle</p>
-                    <p><span>chevaux</span><span>chevaux fiscaux</span></p>
-                    <p>carburant</p>
-                    <p>prix</p>
+                <article class="flex flex-col items-center border-2 border-gray py-3 px-2 rounded-lg bg-gray-50">
+                    <img class="rounded-lg" alt="Ac Cobra" src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/11/13/18/02/citroen-id-citroen-ds-id20_8946516169.jpg">
+                    <p><span>Cobra</span> <span>AC</span></p>
+                    <p><span>400 Ch</span> / <span>22Cv</span></p>
+                    <p>Essence</p>
+                    <p>70 000€</p>
                 </article>
             </li>
             <li>
-                <article class="border-2 border-gray py-3 px-2">
-                    <img alt="" src="">
-                    <p>marque</p>
-                    <p>modèle</p>
-                    <p><span>chevaux</span><span>chevaux fiscaux</span></p>
-                    <p>carburant</p>
-                    <p>prix</p>
+                <article class="flex flex-col items-center border-2 border-gray py-3 px-2 rounded-lg bg-gray-50">
+                    <img class="rounded-lg" alt="alpine A110" src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/11/17/10/47/alpine-a110-alpine-a110-1-8t-300ch-gt-blanc_8949666926.jpg">
+                    <p><span>Alpine</span> <span>A110</span></p>
+                    <p><span>300 Ch</span> / <span>18 Cv</span></p>
+                    <p>Essence</p>
+                    <p>70 000€</p>
                 </article>
             </li>
         </ul>
     </section>
 
-    <section>
-        <h2>Contact</h2>
-        <form>
-            <h3>Demande de devis</h3>
-            <label for="lastname">nom</label>
-            <input id="lastname" type="text">
-            <label for="firstname">prénom</label>
-            <input id="firstname" type="text">
-            <label for="contact">contact</label>
-            <input id="contact" type="text">
-            <label for="message">message</label>
-            <textarea cols="30" id="message" name="message" rows="10"></textarea>
-        </form>
+    <section class="py-10 flex flex-col gap-y-5 items-center w-2/3">
+        <h2 class="text-3xl font-semibold">Contact</h2>
+        <form class="flex flex-col gap-5">
+            <h3 class="text-xl font-medium text-center">Demande de devis</h3>
+            <div class="flex flex-row gap-5 justify-between items-center">
+                <label class="uppercase" for="lastname">nom :</label>
+                <input class="border bg-gray-50 rounded-lg pl-2" id="lastname" type="text" placeholder="DOE">
+            </div>
+            <div class="flex flex-row gap-5 justify-between items-center">
+                <label class="uppercase" for="firstname">prénom :</label>
+                <input class="border bg-gray-50 rounded-lg pl-2" id="firstname" type="text" placeholder="John">
+            </div>
+            <div class="flex flex-row gap-5 justify-between items-center">
+                <label class="uppercase" for="contact">contact :</label>
+                <input class="border bg-gray-50 rounded-lg pl-2" id="contact" type="text" placeholder="mail / téléphone">
+            </div>
+            <div class="flex flex-col">
+                <label class="uppercase" for="message">message :</label>
+                <textarea class="border bg-gray-50 rounded-lg pl-2" id="message" name="message" rows="5"></textarea>
+            </div>
+            </form>
     </section>
 
-    <section class="py-10 flex flex-col gap-y-12 items-center w-2/3">
-        <h2>Ventes déjà établies</h2>
-        <table class="border w-full">
+    <section id="sells" class="py-10 flex flex-col gap-y-5 items-center w-2/3">
+        <h2 class="text-3xl font-semibold">Ventes déjà établies</h2>
+        <table class="text-center uppercase border w-full">
             <thead>
                 <tr>
                     <th> </th>
-                    <th>janvier</th>
-                    <th>fevrier</th>
-                    <th>mars</th>
-                    <th>avril</th>
-                    <th>mai</th>
-                    <th>juin</th>
+                    <th class="border">janvier</th>
+                    <th class="border">fevrier</th>
+                    <th class="border">mars</th>
+                    <th class="border">avril</th>
+                    <th class="border">mai</th>
+                    <th class="border">juin</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>occasion</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>7</td>
-                    <td>6</td>
-                    <td>5</td>
-                    <td>4</td>
+                    <td class="border font-semibold">occasion</td>
+                    <td class="border">10</td>
+                    <td class="border">5</td>
+                    <td class="border">7</td>
+                    <td class="border">6</td>
+                    <td class="border">5</td>
+                    <td class="border">4</td>
                 </tr>
                 <tr>
-                    <td>neuf</td>
-                    <td>3</td>
-                    <td>2</td>
-                    <td>1</td>
-                    <td>8</td>
-                    <td>4</td>
-                    <td>7</td>
+                    <td class="border font-semibold">neuf</td>
+                    <td class="border">3</td>
+                    <td class="border">2</td>
+                    <td class="border">1</td>
+                    <td class="border">8</td>
+                    <td class="border">4</td>
+                    <td class="border">7</td>
                 </tr>
             </tbody>
         </table>
@@ -135,13 +140,11 @@
 
 </main>
 
-<footer>
-    <nav>
-        <ul>
-            <li>C.G.U</li>
-            <li>Mentions Légales</li>
-            <li>Contact</li>
-        </ul>
+<footer class="p-10 max-w-[1200px] mx-auto">
+    <nav class="flex flex-row justify-between items-center">
+            <a class="hover:underline" href="">C.G.U</a>
+            <a class="hover:underline" href="">Mentions Légales</a>
+            <a class="hover:underline" href="#contact">Contact</a>
     </nav>
 </footer>
 
