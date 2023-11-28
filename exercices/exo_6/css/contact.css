@@ -1,6 +1,7 @@
 main {
     width: 60%;
     margin: auto;
+    font-family: sans-serif;
 }
 
 /*Background Color*/
@@ -21,8 +22,8 @@ h2 {
     width: fit-content;
     text-align: center;
     text-transform: uppercase;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
     margin: auto;
     font-weight: bold;
 }
