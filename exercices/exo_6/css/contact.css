@@ -29,9 +29,10 @@ h2 {
 
 /*Section Style*/
 section {
-    margin-top: 2px;
+    margin: 2px auto;
     padding-top: 30px;
     border: solid 1px black;
+    width: 60%;
 }
 
 ol {
