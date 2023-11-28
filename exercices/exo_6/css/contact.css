@@ -1,0 +1,44 @@
+main {
+    width: 60%;
+    margin: auto;
+}
+
+/*Background Color*/
+.bg-green {
+    background-color: #568856;
+}
+
+.bg-sand {
+    background-color: #c5b777;
+}
+
+/*Title Style*/
+h1 {
+    text-align: center;
+}
+
+h2 {
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    margin: auto;
+    font-weight: bold;
+}
+
+/*Section Style*/
+section {
+    margin-top: 2px;
+    padding-top: 30px;
+    border: solid 1px black;
+}
+
+ol {
+    margin: 20px auto 5px;
+    width: fit-content;
+}
+
+li {
+    text-transform: capitalize;
+}

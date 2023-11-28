@@ -1,0 +1,50 @@
+main {
+    width: 60%;
+    margin: auto;
+}
+
+/*Background Color*/
+.bg-green {
+    background-color: #568856;
+}
+
+/*Title Style*/
+h1 {
+    text-align: center;
+}
+
+/*Form style*/
+form {
+    width: 55%;
+    margin: auto;
+    padding: 30px 25px 5px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn-validate {
+    margin-top: 20px;
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: 0;
+}
+
+input[type="text"] {
+    border: 0;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+
+/*Styles*/
+.inline {
+    display: inline;
+}
+
+.block {
+    display: block;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}

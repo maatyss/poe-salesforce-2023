@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <link href="css/new-contact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <title>New Contact</title>
+</head>
+<body>
+<main>
+
+    <h1>Création d'un noveau contact</h1>
+
+    <form action="" class="bg-green">
+        <div class="mt-10">
+            <label for="lastname">
+                <i class="fa-solid fa-user"></i>
+                Nom :
+            </label>
+            <input class="block" id="lastname" placeholder="Ex : Grimard" type="text">
+        </div>
+
+        <div class="mt-10">
+            <label for="firstname">
+                <i class="fa-regular fa-user"></i>
+                Prénom :
+            </label>
+            <input class="block" id="firstname" placeholder="Ex : Alice" type="text">
+        </div>
+
+        <div>
+            <p>
+                <i class="fa-solid fa-gears"></i>
+                Service :
+            </p>
+            <div>
+                <div class="inline ">
+                    <input id="buy" name="services" type="radio" value="buy">
+                    <label for="buy">Achat</label>
+                </div>
+                <div class="inline ">
+                    <input id="sell" name="services" type="radio" value="sell">
+                    <label for="sell">Vente</label>
+                </div>
+                <div class="inline ">
+                    <input id="sav" name="services" type="radio" value="sav">
+                    <label for="sav">Sav</label>
+                </div>
+                <div class="inline ">
+                    <input id="delivrery" name="services" type="radio" value="delivrerydelivrery">
+                    <label for="delivrery">livraison</label>
+                </div>
+            </div>
+        </div>
+
+        <input class="btn-validate" type="submit" value="Ajouter">
+
+    </form>
+
+</main>
+</body>
+</html>
