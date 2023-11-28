@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--  Non, c'est pas vrai, c'est pas l'importation du framewok Tailwind 🙄  -->
+    <title>TP 02</title>
+</head>
+<body class="bg-black text-[#333333]">
+
+<header class="max-w-[1200px] mx-auto bg-[#F5F5F5]">
+    <nav class="flex flex-row justify-between px-10 py-5 uppercase font-semibold rounded-b-lg bg-[#95B8D1]">
+        <a href="#affairs">Occasion / Neuf</a>
+        <a href="#pop">populaires</a>
+        <a href="#contact">contact</a>
+        <a href="#sells">ventes</a>
+    </nav>
+</header>
+
+<main class="py-20 flex flex-col items-center max-w-[1200px] mx-auto bg-[#F5F5F5]">
+    <h1 class="text-5xl font-bold text-[#EDAFB8]">AcheteMaVoiture.com</h1>
+
+    <section class="p-10 flex flex-col gap-y-12 items-center w-full border-b-2 border-black" id="affairs">
+        <h2 class="text-3xl font-bold text-[#666A86]">Vente</h2>
+        <div class="flex flex-row justify-between w-full">
+            <article>
+                <h3 class="text-xl font-semibold text-center">Occasion</h3>
+                <ul class="flex flex-col items-center gap-3 mt-5 list-image-[url(./img/car-solid.svg)]">
+                    <li>Citroen ID20</li>
+                    <li>AC Cobra</li>
+                    <li>Alpine A110</li>
+                    <li>Corvette C2</li>
+                </ul>
+            </article>
+            <article>
+                <h3 class="text-xl font-semibold text-center">Neuf</h3>
+                <ul class="flex flex-col items-center gap-3 mt-5 list-image-[url(./img/car-side-solid.svg)]">
+                    <li>Opel ADAM S</li>
+                    <li>Volkswagen Transporter</li>
+                    <li>Opel Combo Cargo</li>
+                    <li>Land Rover Defender</li>
+                </ul>
+            </article>
+        </div>
+
+    </section>
+
+    <section class="p-10 flex flex-col gap-y-12 items-center w-full border-b-2 border-black" id="pop">
+        <h2 class="text-3xl font-bold text-[#666A86]">Quelques voitures</h2>
+        <ul class="grid grid-cols-2 place-items-center gap-x-10 gap-y-10 w-full">
+            <li>
+                <article class="flex flex-col items-center border-2 border-[#333333] py-3 px-2 rounded-lg bg-[#E8DDB5]">
+                    <img alt="Citroen ID20" class="rounded-lg"
+                         src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/02/21/00/01/citroen-id-citroen-id-id20-ou-dsuper5-1970_8728512340.jpg">
+                    <h3 class="font-semibold"><span>Citroen</span> <span>ID20</span></h3>
+                    <p><span>? Ch</span> / <span>? Cv</span></p>
+                    <p>Essence</p>
+                    <p>18 500 €</p>
+                </article>
+            </li>
+            <li>
+                <article class="flex flex-col items-center border-2 border-[#333333] py-3 px-2 rounded-lg bg-[#E8DDB5]">
+                    <img alt="Ac Cobra" class="rounded-lg"
+                         src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/11/13/18/02/citroen-id-citroen-ds-id20_8946516169.jpg">
+                    <h3 class="font-semibold"><span>Cobra</span> <span>AC</span></h3>
+                    <p><span>400 Ch</span> / <span>22Cv</span></p>
+                    <p>Essence</p>
+                    <p>70 000€</p>
+                </article>
+            </li>
+            <li>
+                <article class="flex flex-col items-center border-2 border-[#333333] py-3 px-2 rounded-lg bg-[#E8DDB5]">
+                    <img alt="alpine A110" class="rounded-lg"
+                         src="https://scalethumb.leparking.fr/unsafe/331x248/smart/filters:format(webp)/https://cloud.leparking.fr/2023/11/17/10/47/alpine-a110-alpine-a110-1-8t-300ch-gt-blanc_8949666926.jpg">
+                    <h3 class="font-semibold"><span>Alpine</span> <span>A110</span></h3>
+                    <p><span>300 Ch</span> / <span>18 Cv</span></p>
+                    <p>Essence</p>
+                    <p>70 000€</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section class="p-10 flex flex-col gap-y-5 items-center w-full border-b-2 border-black">
+        <h2 class="text-3xl font-bold text-[#666A86]">Contact</h2>
+        <form class="flex flex-col gap-5 bg-[#EDAFB8] p-5 rounded-lg font-medium">
+            <h3 class="text-xl font-semibold text-center">Demande de devis</h3>
+            <div class="flex flex-row gap-5 justify-between items-center">
+                <label class="uppercase" for="lastname">nom :</label>
+                <input class="border bg-gray-50 rounded-lg pl-2" id="lastname" placeholder="DOE" type="text">
+            </div>
+            <div class="flex flex-row gap-5 justify-between items-center">
+                <label class="uppercase" for="firstname">prénom :</label>
+                <input class="border bg-gray-50 rounded-lg pl-2" id="firstname" placeholder="John" type="text">
+            </div>
+            <div class="flex flex-row gap-5 justify-between items-center">
+                <label class="uppercase" for="contact">contact :</label>
+                <input class="border bg-gray-50 rounded-lg pl-2" id="contact" placeholder="mail / téléphone" type="text">
+            </div>
+            <div class="flex flex-col">
+                <label class="uppercase" for="message">message :</label>
+                <textarea class="border bg-gray-50 rounded-lg pl-2" id="message" name="message" rows="5"></textarea>
+            </div>
+        </form>
+    </section>
+
+    <section class="p-10 flex flex-col gap-y-5 items-center w-full border-b-2 border-black" id="sells">
+        <h2 class="text-3xl font-bold text-[#666A86]">Ventes déjà établies</h2>
+        <table class="text-center uppercase w-full">
+            <thead>
+            <tr>
+                <th></th>
+                <th class="border-2 border-[#333333]">janvier</th>
+                <th class="border-2 border-[#333333]">fevrier</th>
+                <th class="border-2 border-[#333333]">mars</th>
+                <th class="border-2 border-[#333333]">avril</th>
+                <th class="border-2 border-[#333333]">mai</th>
+                <th class="border-2 border-[#333333]">juin</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="font-bold bg-[#E8DDB5] border-2 border-[#333333]">occasion</td>
+                <td class="bg-[#F0EAD0] border-2 border-[#333333]">10</td>
+                <td class="bg-[#F0EAD0] border-2 border-[#333333]">5</td>
+                <td class="bg-[#F0EAD0] border-2 border-[#333333]">7</td>
+                <td class="bg-[#F0EAD0] border-2 border-[#333333]">6</td>
+                <td class="bg-[#F0EAD0] border-2 border-[#333333]">5</td>
+                <td class="bg-[#F0EAD0] border-2 border-[#333333]">4</td>
+            </tr>
+            <tr>
+                <td class="font-bold bg-[#F3CED4] border-2 border-[#333333]">neuf</td>
+                <td class="bg-[#FBEEF0] border-2 border-[#333333]">3</td>
+                <td class="bg-[#FBEEF0] border-2 border-[#333333]">2</td>
+                <td class="bg-[#FBEEF0] border-2 border-[#333333]">1</td>
+                <td class="bg-[#FBEEF0] border-2 border-[#333333]">8</td>
+                <td class="bg-[#FBEEF0] border-2 border-[#333333]">4</td>
+                <td class="bg-[#FBEEF0] border-2 border-[#333333]">7</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer class="max-w-[1200px] mx-auto bg-[#F5F5F5]">
+    <nav class="flex flex-row justify-between p-10 items-center bg-[#95B8D1] rounded-t-lg">
+        <a class="hover:underline" href="">C.G.U</a>
+        <a class="hover:underline" href="">Mentions Légales</a>
+        <a class="hover:underline" href="#contact">Contact</a>
+    </nav>
+</footer>
+
+</body>
+</html>
