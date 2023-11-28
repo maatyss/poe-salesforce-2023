@@ -33,10 +33,15 @@ input[type="text"] {
     border: 0;
     padding: 5px 5px;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 
 /*Styles*/
+i {
+    margin-right: 3px;
+}
+
 .inline {
     display: inline;
 }
