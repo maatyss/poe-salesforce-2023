@@ -32,7 +32,7 @@ section {
     margin: 2px auto;
     padding-top: 30px;
     border: solid 1px black;
-    width: 60%;
+    max-width: 500px;
 }
 
 ol {
