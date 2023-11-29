@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport">
+    <link href="css/new-contact.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <title>New Contact</title>
+</head>
+<body>
+<main>
+
+    <h1>Création d'un noveau contact</h1>
+
+    <form action="/" class="bg-green lg-flex-col">
+        <div class="flex-col lg-flex-row justify-items-center justify-between content-center mt-10">
+            <label for="lastname">
+                <i class="fa-solid fa-user"></i>
+                <span>Nom :</span>
+            </label>
+            <input id="lastname" placeholder="Ex : Grimard" type="text">
+        </div>
+
+        <div class="flex-col lg-flex-row justify-items-center justify-between content-center mt-10">
+            <label for="firstname">
+                <i class="fa-regular fa-user"></i>
+                <span>Prénom :</span>
+            </label>
+            <input id="firstname" placeholder="Ex : Alice" type="text">
+        </div>
+
+        <div class="lg-flex-row">
+            <p>
+                <i class="fa-solid fa-gears"></i>
+                Service :
+            </p>
+            <div class="flex-col md-flex-row lg-items-center">
+                <div class="md-flex-row">
+                    <input id="buy" name="services" type="radio" value="buy">
+                    <label for="buy">Achat</label>
+                </div>
+                <div class="md-flex-row lg-items-center">
+                    <input id="sell" name="services" type="radio" value="sell">
+                    <label for="sell">Vente</label>
+                </div>
+                <div class="md-flex-row lg-items-center">
+                    <input id="sav" name="services" type="radio" value="sav">
+                    <label for="sav">Sav</label>
+                </div>
+                <div class="md-flex-row lg-items-center">
+                    <input id="delivrery" name="services" type="radio" value="delivrery">
+                    <label for="delivrery">livraison</label>
+                </div>
+            </div>
+        </div>
+
+        <input class="btn-validate" type="submit" value="Ajouter">
+
+    </form>
+
+</main>
+</body>
+</html>
