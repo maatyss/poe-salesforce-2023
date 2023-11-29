@@ -33,7 +33,8 @@ form {
 
 input[type="text"] {
     border: 0;
-    padding: 5px 5px;
+    font-size: 25px;
+    padding: 0 5px;
     border-radius: 5px;
     margin-top: 10px;
 }
@@ -46,10 +47,6 @@ input[type="radio"] {
 /*Styles*/
 i {
     margin-right: 3px;
-}
-
-.block {
-    display: block;
 }
 
 .flex-col {
@@ -66,16 +63,16 @@ i {
     margin-top: 10px;
 }
 
-.content-center {
-    align-content: center;
-}
-
-.justify-items-center {
-    justify-items: center;
-}
-
 .justify-between {
     justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.w-75 {
+    width: 75%;
 }
 
 @media (min-width: 768px) {
