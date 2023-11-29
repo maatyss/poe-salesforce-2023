@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header > img {
+    width: 9rem;
+}
+
+header > nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}

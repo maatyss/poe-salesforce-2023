@@ -1,0 +1,104 @@
+/*Propriétés css en mobile first*/
+body {
+    font-family: "Roboto Light", sans-serif;
+}
+
+h1, h2 {
+    color: #323232;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    color: #004d5a;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+p {
+    color: #656565;
+}
+
+nav {
+    padding: 2rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    padding: 2rem 2rem;
+}
+
+strong {
+    font-weight: 600;
+    color: black;
+}
+
+form {
+    margin-top: 2rem;
+}
+
+input[type="text"], input[type="email"] {
+    font-size: 20px;
+    border: solid 0.15rem #004d5a;
+    padding: 0.5rem 0.5rem;
+}
+
+input[type="submit"] {
+    background-color: #004d5a;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.separator {
+    height: 0.2rem;
+    width: 40%;
+    background-color: #004d5a;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.bg-dark-gray {
+    background-color: rgb(31, 31, 31);
+}
+
+.bg-light-gray {
+    background-color: rgb(155, 155, 155);
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-y-1 {
+    row-gap: 2rem;
+}
+
+/*MEDIA QUERIES*/
+
