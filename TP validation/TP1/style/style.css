@@ -58,10 +58,9 @@ header h1 {
     flex-direction: column;
     justify-content: space-between;
     row-gap: 3rem;
-    padding: 3rem 0;
 }
 
-article {
+.section-home article {
     position: relative;
     height: 12rem;
 }
@@ -174,6 +173,75 @@ footer ul {
     gap: 1rem;
 }
 
+/* PAGEs */
+
+.hero {
+    position: relative;
+    height: 12rem;
+}
+
+.hero img {
+    object-fit: cover;
+    height: 12rem;
+    width: 100%;
+}
+
+.hero h2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue-dark-t);
+    margin: 0;
+    padding: 1rem 0;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.breadcrumb {
+    margin: 3rem 0 2rem 1rem;
+    color: var(--blue-home);
+    font-size: 0.75rem;
+}
+
+.breadcrumb span {
+    margin-left: 0.5rem;
+    color: black;
+}
+
+.h2-formation {
+    color: var(--blue-dark);
+}
+
+h2 span {
+    margin-left: 0.5rem;
+}
+
+.section-pages {
+    padding: 3rem 1rem;
+}
+
+.hero-price h2 {
+    background-color: var(--blue-light-t);
+}
+
+.h2-pricing {
+    color: var(--blue-light);
+}
+
+.hero-visit h2 {
+    background-color: var(--blue-turquoise-t);
+}
+
+
+.h2-visit {
+    color: var(--blue-turquoise);
+}
+
+
+/*media queries*/
+
 @media (min-width: 750px) {
     .section-home {
         min-height: 50vh;
@@ -187,8 +255,9 @@ footer ul {
     }
 }
 
+
 @media (min-width: 1400px) {
-    article, .home-img, .home-overlay {
+    .section-home article, .home-img, .home-overlay {
         height: 20rem;
         width: 20rem;
     }
@@ -198,4 +267,32 @@ footer ul {
         height: 10rem;
         width: 10rem;
     }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .hero {
+        width: 25%;
+        min-height: 30rem;
+    }
+
+    .hero img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    main > div {
+        width: 75%;
+    }
+
+    .section-pages {
+        padding: 0 1rem;
+    }
+
 }
