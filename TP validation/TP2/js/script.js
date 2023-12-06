@@ -1,3 +1,5 @@
+// NEWSLETTER
+
 let newsForm = document.querySelector('form')
 let newsMail = document.querySelector('#mail')
 let newsBtn = document.querySelector('#newsBtn')
@@ -41,4 +43,36 @@ const addSuccess = () => {
   
   newsForm.querySelector('div').innerHTML = ''
   newsForm.querySelector('div').appendChild(messageNews)
+}
+
+// GALLERY
+
+let turtlesImg = [...document.querySelectorAll('.turtles-img')]
+let imgOverlay = document.createElement('div')
+let image = document.createElement('img')
+
+turtlesImg.map((img) => {
+  img.addEventListener('click', () => {
+    displayImage(img.src)
+  })
+})
+
+imgOverlay.addEventListener('click', () => {
+  removeImage()
+})
+
+function displayImage(url) {
+  imgOverlay.classList.add('img-overlay')
+  
+  image.setAttribute('src', url)
+  image.setAttribute('alt', '')
+  
+  imgOverlay.prepend(image)
+  
+  document.querySelector('body').append(imgOverlay)
+}
+
+function removeImage() {
+  let imgOverlay = document.querySelector('.img-overlay')
+  imgOverlay.remove()
 }
