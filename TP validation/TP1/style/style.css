@@ -8,6 +8,8 @@
     --blue-home: #0A415B;
 }
 
+/* body / header / footer */
+
 body {
     font-family: "Roboto Light", sans-serif;
 }
@@ -52,6 +54,47 @@ header h1 {
     background-image: linear-gradient(to right, var(--blue-turquoise), var(--blue-dark));
     opacity: 0.7;
 }
+
+footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    height: 12rem;
+    background-image: linear-gradient(to right, var(--blue-turquoise), var(--blue-light));
+    color: white;
+    text-decoration: none;
+}
+
+footer h2 {
+    text-align: center;
+    align-self: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0.2rem white solid;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.3rem;
+    width: fit-content;
+}
+
+footer nav {
+    padding: 0 1rem;
+}
+
+footer nav, footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+footer ul {
+    list-style: none;
+    gap: 1rem;
+}
+
+/* landing page */
 
 .section-home {
     display: flex;
@@ -134,46 +177,7 @@ article .home-img[alt="home-img3"] + div + h2 {
     background-color: var(--blue-dark);
 }
 
-footer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem 2rem;
-    height: 12rem;
-    background-image: linear-gradient(to right, var(--blue-turquoise), var(--blue-light));
-    color: white;
-    text-decoration: none;
-}
-
-footer h2 {
-    text-align: center;
-    align-self: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: 0.2rem white solid;
-    border-radius: 0.5rem;
-    padding: 0.5rem 0.3rem;
-    width: fit-content;
-}
-
-footer nav {
-    padding: 0 1rem;
-}
-
-footer nav, footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-}
-
-footer ul {
-    list-style: none;
-    gap: 1rem;
-}
-
-/* PAGEs */
+/* PAGES */
 
 .hero {
     position: relative;
@@ -191,7 +195,6 @@ footer ul {
     top: 0;
     width: 100%;
     text-align: center;
-    background-color: var(--blue-dark-t);
     margin: 0;
     padding: 1rem 0;
     color: white;
@@ -210,17 +213,25 @@ footer ul {
     color: black;
 }
 
-.h2-formation {
-    color: var(--blue-dark);
+.section-pages {
+    padding: 3rem 1rem;
 }
 
 h2 span {
     margin-left: 0.5rem;
 }
 
-.section-pages {
-    padding: 3rem 1rem;
+/* Formation */
+
+.hero-formation h2 {
+    background-color: var(--blue-dark-t);
 }
+
+.h2-formation {
+    color: var(--blue-dark);
+}
+
+/* pricing */
 
 .hero-price h2 {
     background-color: var(--blue-light-t);
@@ -230,10 +241,11 @@ h2 span {
     color: var(--blue-light);
 }
 
+/* Visit */
+
 .hero-visit h2 {
     background-color: var(--blue-turquoise-t);
 }
-
 
 .h2-visit {
     color: var(--blue-turquoise);
