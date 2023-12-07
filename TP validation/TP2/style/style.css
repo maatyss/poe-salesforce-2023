@@ -375,7 +375,11 @@ input[name="mail"].errorBorder, input[type="submit"].errorBorder {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
+}
 
+.img-overlay img {
+    max-width: 80%;
+    max-height: 100%;
 }
 
 /*media queries*/
