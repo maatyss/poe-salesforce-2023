@@ -73,6 +73,5 @@ function displayImage(url) {
 }
 
 function removeImage() {
-  let imgOverlay = document.querySelector('.img-overlay')
   imgOverlay.remove()
 }
