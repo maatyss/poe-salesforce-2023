@@ -47,11 +47,11 @@ const addSuccess = () => {
 
 // GALLERY
 
-let turtlesImg = [...document.querySelectorAll('.turtles-img')]
+let turtlesImgs = [...document.querySelectorAll('.turtles-img')]
 let imgOverlay = document.createElement('div')
 let image = document.createElement('img')
 
-turtlesImg.map((img) => {
+turtlesImgs.map((img) => {
   img.addEventListener('click', () => {
     displayImage(img.src)
   })
