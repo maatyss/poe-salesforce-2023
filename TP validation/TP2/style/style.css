@@ -346,16 +346,16 @@ h2 span {
 
 /* js playing class */
 
-.errorText {
-    color: red !important;
+.errorText, input[name="mail"].errorText {
+    color: red;
 }
 
-.errorBtn {
-    background-color: red !important;
+input[type="submit"].errorBtn {
+    background-color: red;
 }
 
-.errorBorder {
-    border-color: red !important;
+input[name="mail"].errorBorder, input[type="submit"].errorBorder {
+    border-color: red;
 }
 
 .success {
@@ -371,10 +371,11 @@ h2 span {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+
 }
 
 /*media queries*/
